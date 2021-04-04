@@ -44,10 +44,8 @@ module.exports = {
     client: 'pg',
     connection: process.env.DATABASE_URL,
     ssl: true,
-    extra: {
-      ssl: {
-        rejectUnauthorized: false,
-      },
+    ssl: {
+      rejectUnauthorized: false,
     },
     migrations: {
       directory: "./data/migrations",
