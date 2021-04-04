@@ -44,7 +44,7 @@ module.exports = {
     client: 'pg',
     connection: process.env.DATABASE_URL,
     ssl: {
-      sslmode: 'require',
+      sslmode: 'verify-ca',
       rejectUnauthorized: false,
     },
     migrations: {
