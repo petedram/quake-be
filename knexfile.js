@@ -46,6 +46,7 @@ module.exports = {
     ssl: {
       sslmode: 'verify-ca',
       rejectUnauthorized: false,
+      sslfactory: org.postgresql.ssl.NonValidatingFactory,
     },
     migrations: {
       directory: "./data/migrations",
