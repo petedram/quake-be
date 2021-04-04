@@ -44,6 +44,9 @@ module.exports = {
     client: 'pg',
     connection: process.env.DATABASE_URL,
     ssl: true,
+    dialectOptions: {
+      "ssl": {"require":true }
+    },
     migrations: {
       directory: "./data/migrations",
   },
