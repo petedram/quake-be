@@ -10,7 +10,7 @@
     "postinstall": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
   "engines": {
-    "node": "14.x"
+    "node": "15.x"
   },
   "jest": {
     "testEnvironment": "node",
