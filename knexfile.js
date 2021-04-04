@@ -48,12 +48,13 @@ module.exports = {
       ssl: {
         rejectUnauthorized: false,
       },
+    },
     migrations: {
       directory: "./data/migrations",
-  },
+    },
   seeds: {
       directory: "./data/seeds",
-  },
+    },
   }
 
 };
